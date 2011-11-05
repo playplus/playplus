@@ -15,29 +15,31 @@
    <div id="centralizer">
        <div id="container">
            <div id="header">
-               <b style="float: left;">Left Logo</b>
-               <b style="float:right;">Right Logo</b>
+               <bb style="float: left;"><img src="img/logo.png" onclick="location.href='index.php';"></bb>
+               <dd style="float:right;"><img src="img/vmp.png" onclick="location.href='http://www.vmp.ethz.ch';"></dd>
            </div>
                <div class="splitter"></div>
            <div id="loading">Loading</div>
            <div id="coverdiv">
-               <img id="coverart" style="display: none;" src="cover.png" onload="StopLoading()">
+               <img id="coverart" style="display: none;" src="img/cover.png" onload="StopLoading()">
            </div>
            <div class="splitter"></div>
            <div id="content" style="display: none;">
                <div id="menu">
-                   <a class="button" id="b0" href="#0">Link</a>
-                   <a class="button" id="b1" href="#1">Link</a>
-                   <a class="button" id="b2" href="#2">Link</a>
-                   <a class="button" id="b3" href="#3">Link</a>
-                   <a class="button" id="b4" href="#4">Link</a>
+               <?php
+                   for($i=0;$i<5;$i++) {
+                    echo '<div class="button"><a id="b'.$i.'" href="#'.$i.'"><img src="img/b'.$i.'.png"></a><span class="underline"></span>';
+                    echo $i!=4?'<span class="divide"></span>':'';
+                    echo'</div>';
+                   }
+               ?>
                </div>
                <div id="text">
-                   <div id="t0" class="text"><?php readfile("t/home.html"); ?></div>
-                   <div id="t1" class="text"><?php readfile("t/ideas.html"); ?></div>
-                   <div id="t2" class="text"><?php readfile("t/install.html"); ?></div>
-                   <div id="t3" class="text"><?php readfile("t/develop.html"); ?></div>
-                   <div id="t4" class="text"><?php readfile("t/about.html"); ?></div>
+                   <div id="t0" class="text"><?php readfile("txt/home.html"); ?></div>
+                   <div id="t1" class="text"><?php readfile("txt/ideas.html"); ?></div>
+                   <div id="t2" class="text"><?php readfile("txt/install.html"); ?></div>
+                   <div id="t3" class="text"><?php readfile("txt/develop.html"); ?></div>
+                   <div id="t4" class="text"><?php readfile("txt/about.html"); ?></div>
                </div>
            </div>
        </div>
