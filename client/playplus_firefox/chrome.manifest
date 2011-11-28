@@ -1,0 +1,2 @@
+content	playplus	content/
+overlay	chrome://browser/content/browser.xul	chrome://playplus/content/script-compiler-overlay.xul

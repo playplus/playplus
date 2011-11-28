@@ -52,8 +52,11 @@
         }
     }
     function goToPage(index) {
+        //this has effect only for the "first click"
         $("#coverart").animate({ opacity: '0' },100, function() {
-            $("#coverdiv").slideUp("slow");
+            $("#coverdiv").slideUp("slow", function() {
+                $("#text").fadeIn();
+            });
         });
         $("#b"+eval(page)).toggleClass("clicked");
         $("#t"+eval(page)).hide();

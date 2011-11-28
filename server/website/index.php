@@ -34,7 +34,7 @@
                    }
                ?>
                </div>
-               <div id="text">
+               <div id="text" style="display: none;">
                    <div id="t0" class="text"><?php readfile("txt/home.html"); ?></div>
                    <div id="t1" class="text"><?php readfile("txt/ideas.html"); ?></div>
                    <div id="t2" class="text"><?php readfile("txt/install.html"); ?></div>

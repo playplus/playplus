@@ -1,7 +1,7 @@
 body {
     margin:  0px;
     padding: 0px;
-    font-family: 'Droid Sans', Arial, sans-serif;
+    font-family: 'Droid Sans', Verdana, sans-serif;
 }
 body h1 {
     
@@ -42,6 +42,28 @@ body h1 {
 #text {
     text-align: left;
     padding:  20px 150px 20px 150px;
+}
+#text h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+#text p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 5px 20px 40px 20px;
+}
+#text ul {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 10px 5px 10px 5px;
+}
+#text p b {
+    color: #07C;
+}
+#text p a {
+    color: #07C;
 }
 .button {
     position: relative;
